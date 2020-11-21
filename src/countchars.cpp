@@ -25,7 +25,7 @@ int countchars(char *char_to_find, char *string_to_search) {
 	}
 	int number_found = 0;
 	for (unsigned int i = 0; i < strlen(string_to_search); i++) {
-		if (string_to_search[i] == *(char_to_find)) {
+		if (*(string_to_search + i) == char_to_find[0]) {
 			number_found += 1;
 		}
 	}
